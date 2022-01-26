@@ -41,7 +41,7 @@ h1 span {
     margin-bottom: 10px;
 }
 
-p {
+.text p {
     font-size: 19px;
     font-family: 'Lato', sans-serif;
     line-height: 1.4;
@@ -49,7 +49,8 @@ p {
     font-weight: 400;
 }
 
-a {
+.main a, 
+.promo a {
     color: #1E2F40;
     background-color: #FBB731;
     text-transform: uppercase;
@@ -75,9 +76,130 @@ a {
     background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
 }
 
-img {
+.main img {
     width: 829px;
     position: absolute;
     height: 861px;
     right: -168px;
+}
+
+.promo {
+    padding: 186px 0;
+    color: #FFFFFF;
+}
+
+.promo-left, 
+.promo-right {
+    flex: 0 0 49%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.promo-left {
+    background-image: url(../img/burger-left.png);
+    padding: 116px 50px;
+}
+
+.promo-right {
+    background-image: url(../img/burger-right.png);
+    padding: 102px 50px;
+}
+
+.sale {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: #F37335;
+    border-radius: 14px;
+    padding: 5px 19px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.cost {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.description {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #FAF9F9;
+}
+
+.free {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.promo-left .description {
+    max-width: 400px;
+}
+
+.promo-right .description {
+    max-width: 300px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    background: #1E2F40;
+    color: #FFFFFF;
+    padding-top: 117px;
+    padding-bottom: 106px;
+}
+
+.logo {
+    width: 63px;
+    width: 56px;
+}
+
+.item h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.item ul,
+.tel ul {
+    list-style-type: none;
+}
+
+.item li {
+    margin-bottom: 9px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FAFAF9;
+    font-weight: 700;
+}
+
+.item a {
+    color: #DEDEDE;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.item span {
+    color: #DEDEDE;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.tel ul {
+    color: #FBB731;
+    font-size: 20px;
+}
+
+.tel li {
+    margin-bottom: 12px;
 }
